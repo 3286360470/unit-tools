@@ -14,9 +14,13 @@ public class AtomicIntegerTest {
 
 
   public static void main(String[] args) {
-    AtomicInteger atomicInteger = new AtomicInteger(5);
-    System.out.println(atomicInteger.compareAndSet(5, 50));
-    System.out.println(atomicInteger.compareAndSet(51, 100));
+//    AtomicInteger atomicInteger = new AtomicInteger(5);
+//    System.out.println(atomicInteger.compareAndSet(5, 50));
+//    System.out.println(atomicInteger.compareAndSet(51, 100));
+
+    // 获取jdk 的ext扩展程序目录
+//    System.out.println(System.getProperty("java.ext.dirs"));
+    System.out.println(System.getProperty("java.class.path"));
   }
 
 }

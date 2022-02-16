@@ -36,7 +36,7 @@ public class RedisPool {
           jedisClusters.remove(0);
         } else {
           for (int i = 0; i < REDIS_POOL_SIZE; i++) {
-            GenericObjectPoolConfig<Object> poolConfig = new GenericObjectPoolConfig<>();
+            GenericObjectPoolConfig poolConfig = new GenericObjectPoolConfig();
             poolConfig.setMaxIdle(MAX_IDLE);
             poolConfig.setMaxTotal(MAX_TOTAL);
             poolConfig.setMaxWaitMillis(MAX_WAIT);
